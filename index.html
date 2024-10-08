@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>词云生成器</title>
+</head>
+<body>
+    <h1>中文词云生成器</h1>
+    <form id="wordcloud-form" enctype="multipart/form-data" method="POST" action="/generate_wordcloud">
+        <label for="text">输入中文文本:</label><br>
+        <textarea id="text" name="text" rows="10" cols="50"></textarea><br><br>
+
+        <label for="file">或上传txt文件:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+
+        <label for="background">上传背景图片 (可选):</label><br>
+        <input type="file" id="background" name="background"><br><br>
+
+        <input type="submit" value="生成词云">
+    </form>
+
+    <div id="wordcloud-output">
+        <img id="wordcloud-image" src="" alt="词云将显示在这里">
+    </div>
+</body>
+</html>
