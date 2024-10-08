@@ -1,0 +1,5 @@
+Flask
+thulac
+wordcloud
+matplotlib
+gunicorn
